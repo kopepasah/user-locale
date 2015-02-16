@@ -1,12 +1,13 @@
 <?php
 /*
 Plugin Name: User Locale
-Plugin URI: http://github.com/kopepasah/user-locale
+Plugin URI: http://wordpress.org/plugins/user-locale
 Description: Allows users to set their own language on their profile page.
 Version: 1.0.0
 Author: Justin Kopepasah
 Author URI: http://kopepasah.com/
-License: MIT - http://opensource.org/licenses/MIT
+License: MIT
+License URI: http://opensource.org/licenses/MIT
 Text Domain: user-locale
 */
 
