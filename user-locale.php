@@ -75,6 +75,14 @@ if ( ! class_exists( 'User_Locale' ) ) {
 		*/
 		public function filter_locale( $locale ) {
 
+			/**
+			 * Hack for showing the correct language option on Settings > General.
+			 * TODO Find a better way to implement this to only show the correct option for the page, not change the language entirely.
+			 */
+			if ( $GLOBALS['pagenow'] == 'options-general.php' ) {
+				return $locale;
+			}
+
 			// Get the current user's language setting.
 			$user_locale = $this->get_option();
 
